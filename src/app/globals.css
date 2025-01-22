@@ -17,5 +17,22 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.max-w-xl {
+  max-width: 50rem ;
+}
+
+.text-sm{
+  font-size: 0.800rem;
+}
+
+.text-vm{
+  font-size: 1rem;
+}
+
+.py-x {
+  padding-top: 0.25rem /* 4px */;
+  padding-bottom: 0.25rem /* 4px */;
 }
