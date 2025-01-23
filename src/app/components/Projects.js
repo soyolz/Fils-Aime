@@ -9,7 +9,7 @@ export default function Projects() {
             </div>
             <ul>
                 <li>
-                    <a className="">Fritz Fils-Aime</a>
+                    <a className="hover:cursor-pointer" href="https://www.fils.lol" >Fritz Fils-Aime</a>
                 </li>
             </ul>
         </div>
