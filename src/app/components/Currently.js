@@ -58,7 +58,7 @@ export default function Currently() {
 
     return (
         <Popover>
-            <PopoverButton className="fixed focus:outline-none z-50 h-20 max-w-sm translate-y-[33vh] -translate-x-[18.3vh] font-mono">
+            <PopoverButton className="fixed focus:outline-none z-50 h-20 max-w-sm small:translate-y-[35vh] regular:translate-y-[33vh] -translate-x-[18.3vh] font-mono">
             <div className="flex items-center text-gray-500 font-light">
                     <h1>EDUCATION</h1>
                     <ChevronDownIcon aria-hidden="true" className="w-5 h-3" />
@@ -84,7 +84,7 @@ export default function Currently() {
             </div>
 
         </PopoverPanel>
-            <div className="fixed z-50 h-20 max-w-lg translate-y-[38vh] -translate-x-[18.3vh] font-mono">{renderSelectedUniversity(selectedUniversity)}</div>
+            <div className="fixed z-50 h-20 max-w-lg small:w-[38vh] small:translate-y-[41vh] regular:translate-y-[38vh] -translate-x-[18.3vh] font-mono">{renderSelectedUniversity(selectedUniversity)}</div>
         </Popover>
     );
 };

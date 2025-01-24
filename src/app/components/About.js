@@ -4,7 +4,7 @@ export default function About() {
             <h1 className="flex text-gray-500 text-vm font-light mb-3">
                 ABOUT
             </h1>
-            <h1 className="leading-relaxed">
+            <h1 className="leading-relaxed small:w-[38vh]">
                 <span className="font-bold">Hi, I'm Fritz.</span>
                 <span className="font-thin"> I am a software engineer and student at <a href="https://www.fiu.edu/" target="_blank" rel="noopener noreferrer" className="underline hover:decoration-2 decoration-sky-500 hover:font-bold hover:ease-in cursor-pointer">Florida International University</a>. I love building ideas that solve simple and complex tasks.</span>
             </h1>

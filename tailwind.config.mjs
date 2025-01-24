@@ -7,10 +7,14 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens:{
+      small: "100px",
+      regular: "1000px",
+    },
     extend:{ 
     divideOpacity: {
         30:  '0.35', 
-        50: '0.5'
+        50: '0.5',
       },
     fontFamily: {
       mono: ['var(--font-jetbrains-mono)', 'monospace'], // Ensure this matches your font
