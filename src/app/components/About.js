@@ -5,7 +5,7 @@ export default function About() {
                 ABOUT
             </h1>
             <h1 className="leading-relaxed small:w-[38vh]">
-                <span className="font-bold">Hi, I'm Fritz.</span>
+                <span className="font-bold">Hi, my name is Fritz.</span>
                 <span className="font-thin"> I am a software engineer and student at <a href="https://www.fiu.edu/" target="_blank" rel="noopener noreferrer" className="underline hover:decoration-2 decoration-sky-500 hover:font-bold hover:ease-in cursor-pointer">Florida International University</a>. I love building ideas that solve simple and complex tasks.</span>
             </h1>
         </div>
