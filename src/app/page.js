@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Currently from "./components/Currently";
 import Projects from "./components/Projects";
 import "./globals.css";
 
@@ -10,7 +9,6 @@ export default function Home() {
       <main>
       <Navbar />
       <About />
-      <Currently />
       <Projects />
       </main>
     </div>
