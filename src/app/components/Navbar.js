@@ -40,7 +40,7 @@ export default function Navbar() {
 
                 <li className="relative px-5 text-center group">
                     <span className="absolute inset-0 bg-gray-300 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity pointer-events-none"></span>
-                    <button onClick={open} className="relative z-10">Contact</button>
+                    <button onClick={open} className="relative z-10 focus:outline-none">Contact</button>
                 </li>
 
                 <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none" onClose={close}>
@@ -51,7 +51,7 @@ export default function Navbar() {
                                 <p className="text-white">
                                     Contact me! 😃
                                 </p>
-                                <div className="mt-4 space-x-5">
+                                <div className="mt-4 space-x-3">
                                     <Button onClick={() => window.open("https://www.linkedin.com/in/fritzffa", "_blank")} className="inline-flex items-center rounded-md bg-black py-1.5 px-5  text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         LinkedIn
                                     </Button>
@@ -60,6 +60,9 @@ export default function Navbar() {
                                     </Button>
                                     <Button onClick={() => window.open("https://github.com/soyolz", "_blank")} className="inline-flex items-center rounded-md bg-black py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         Github
+                                    </Button>
+                                    <Button onClick={() => window.location.href = "mailto:fritzfils7aime@gmail.com"} className="inline-flex items-center rounded-md bg-black py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
+                                        Mail
                                     </Button>
                                 </div>
                             </DialogPanel>
