@@ -67,11 +67,9 @@ export default function Navbar() {
                     </div>
                 </Dialog>
 
-
                 <li className="px-5 text-center hidden regular:block">
                     <Clock />
                 </li>
-
 
             </ul>
         </div>
