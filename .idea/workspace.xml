@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31383a99-516d-4c39-af48-b897bcd004d4" name="Changes" comment="Changed meta data" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Test-branch" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Test-branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;soyolz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soyolz/Fils-Aime.git&quot;,
+    &quot;accountId&quot;: &quot;dfc8d47c-907f-4ac3-a169-2190705fe4d2&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2saSR8vlccIBGxoh13wOTHXtmpH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.About.js.executor": "Debug",
+    "Node.js.Navbar.js.executor": "Debug",
+    "Node.js.layout.js.executor": "Debug",
+    "Node.js.tailwind.config.mjs.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.general",
+    "ts.external.directory.path": "C:\\Users\\AsSiv\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AsSiv\Desktop\round - Copy\src\app" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31383a99-516d-4c39-af48-b897bcd004d4" name="Changes" comment="" />
+      <created>1738692182510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738692182510</updated>
+      <workItem from="1738692183685" duration="3369000" />
+      <workItem from="1738699430114" duration="4087000" />
+      <workItem from="1738742180927" duration="20980000" />
+      <workItem from="1738856461494" duration="1456000" />
+      <workItem from="1738857956026" duration="378000" />
+      <workItem from="1738858424304" duration="104000" />
+      <workItem from="1739037307460" duration="1885000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changed I'm to &quot;my name is&quot;">
+      <option name="closed" value="true" />
+      <created>1738696143781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738696143781</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed Positioning on big screens and medium size screens. Haven't fixed it for mobile. Deleted Currently.Js and added the code from that file into the About.js file.">
+      <option name="closed" value="true" />
+      <created>1738755692235</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738755692235</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Edited the Nav bar">
+      <option name="closed" value="true" />
+      <created>1738760113264</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738760113264</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added functionality to the nav bar - added backdrop and links for contact. Deleted contact page and added contact funcality in the Nav bar.">
+      <option name="closed" value="true" />
+      <created>1738834753939</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738834753939</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Minor Changes">
+      <option name="closed" value="true" />
+      <created>1738835031521</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738835031521</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added ability to send email.">
+      <option name="closed" value="true" />
+      <created>1738835458966</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738835458966</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed meta data">
+      <option name="closed" value="true" />
+      <created>1738856822940</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738856822940</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed meta data">
+      <option name="closed" value="true" />
+      <created>1738857343789</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738857343789</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changed meta data">
+      <option name="closed" value="true" />
+      <created>1739038790566</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739038790566</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changed meta data">
+      <option name="closed" value="true" />
+      <created>1739038870355</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739038870355</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed I'm to &quot;my name is&quot;" />
+    <MESSAGE value="Fixed Positioning on big screens and medium size screens. Haven't fixed it for mobile. Deleted Currently.Js and added the code from that file into the About.js file." />
+    <MESSAGE value="Edited the Nav bar" />
+    <MESSAGE value="Added functionality to the nav bar - added backdrop and links for contact. Deleted contact page and added contact funcality in the Nav bar." />
+    <MESSAGE value="Minor Changes" />
+    <MESSAGE value="Added ability to send email." />
+    <MESSAGE value="Changed meta data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed meta data" />
+  </component>
+</project>
