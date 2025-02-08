@@ -27,19 +27,19 @@ export default function Navbar() {
 
 
                 <li className="relative px-5 text-center group">
-                    <span className="absolute inset-0 bg-gray-300 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity"></span>
+                    <span className="absolute inset-0 bg-gray-300/50 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity"></span>
                     <a href="#about" className="relative z-10 ">About</a>
                 </li>
 
 
                 <li className="relative px-5 text-center group">
-                    <span className="absolute inset-0 bg-gray-300 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity"></span>
+                    <span className="absolute inset-0 bg-gray-300/50 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity"></span>
                     <a href="#projects" className="relative z-10 ">Projects</a>
                 </li>
 
 
                 <li className="relative px-5 text-center group">
-                    <span className="absolute inset-0 bg-gray-300 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity pointer-events-none"></span>
+                    <span className="absolute inset-0 bg-gray-300/50 rounded-sm opacity-0 group-hover:opacity-20 transition-opacity pointer-events-none"></span>
                     <button onClick={open} className="relative z-10 focus:outline-none">Contact</button>
                 </li>
 
@@ -47,21 +47,21 @@ export default function Navbar() {
                     <DialogBackdrop className="transition fixed inset-0 backdrop-blur-sm" />
                     <div className="fixed inset-0 z-10 w-screen overflow-y-auto font-mono">
                         <div className="flex min-h-full items-center justify-center p-4">
-                            <DialogPanel transition className="w-full max-w-md rounded-md shadow-lg bg-black border border-gray-500/25 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0">
+                            <DialogPanel transition className="w-full max-w-md rounded-md shadow-lg bg-black/30 border border-gray-500/25 p-5 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0">
                                 <p className="text-white">
                                     Contact me! 😃
                                 </p>
-                                <div className="mt-4 space-x-3">
-                                    <Button onClick={() => window.open("https://www.linkedin.com/in/fritzffa", "_blank")} className="inline-flex items-center rounded-md bg-black py-1.5 px-5  text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
+                                <div className="mt-4 space-x-2">
+                                    <Button onClick={() => window.open("https://www.linkedin.com/in/fritzffa", "_blank")} className="inline-flex items-center rounded-md bg-black border border-gray-200/10 py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         LinkedIn
                                     </Button>
-                                    <Button className="inline-flex items-center rounded-md bg-black py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
+                                    <Button className="inline-flex items-center rounded-md bg-black border border-gray-200/10 py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         Resume
                                     </Button>
-                                    <Button onClick={() => window.open("https://github.com/soyolz", "_blank")} className="inline-flex items-center rounded-md bg-black py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
+                                    <Button onClick={() => window.open("https://github.com/soyolz", "_blank")} className="inline-flex items-center rounded-md bg-black border border-gray-200/10 py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         Github
                                     </Button>
-                                    <Button onClick={() => window.location.href = "mailto:fritzfils7aime@gmail.com"} className="inline-flex items-center rounded-md bg-black py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
+                                    <Button onClick={() => window.location.href = "mailto:fritzfils7aime@gmail.com"} className="inline-flex items-center rounded-md bg-black border border-gray-200/10 py-1.5 px-5 text-sm/6 font-semibold text-white shadow-sm focus:outline-none data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white data-[open]:bg-gray-700">
                                         Mail
                                     </Button>
                                 </div>
