@@ -10,11 +10,11 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 
-// Shit like the website name on google 
+// Shit like the website name on Google
 
 export const metadata = {
-  title: "Portfolio",
-  description: "Portfolio",
+  title: "Fils",
+  description: "My professional portfolio website.",
 };
 
 export default function RootLayout({ children }) {
