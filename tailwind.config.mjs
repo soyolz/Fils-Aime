@@ -46,22 +46,9 @@ export default {
       transitionDuration: {
         '2000': '2000ms',
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: 'var(--foreground)',
-            a: {
-              color: 'var(--accent)',
-              '&:hover': {
-                color: 'var(--accent-hover)',
-              },
-            },
-          },
-        },
-      },
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    // Typography plugin removed
   ],
 };

@@ -1,12 +1,17 @@
+// Clock.js
 'use client'
 
 import { useState, useEffect } from 'react'
 
 function Clock() {
-    const [time, setTime] = useState(new Date());
+    // Start with null instead of new Date()
+    const [time, setTime] = useState(null);
     const [showColon, setShowColon] = useState(true);
 
     useEffect(() => {
+        // Set the time only on the client side
+        setTime(new Date());
+
         const intervalId = setInterval(() => {
             setTime(new Date());
             setShowColon((prev) => !prev);
@@ -16,6 +21,9 @@ function Clock() {
             clearInterval(intervalId);
         }
     }, []);
+
+    // Only render the formatted time if it exists (client-side only)
+    if (!time) return <span>Loading...</span>;
 
     function formatTime() {
         let hours = time.getHours();
@@ -31,23 +39,7 @@ function Clock() {
     }
 
     return (
-        <div className="font-mono text-sm flex items-center space-x-1">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-blue-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-            >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-            </svg>
-            <span className="font-medium">{formatTime()}</span>
-        </div>
+        <h1>{formatTime()}</h1>
     );
 }
 
