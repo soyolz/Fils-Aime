@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31383a99-516d-4c39-af48-b897bcd004d4" name="Changes" comment="Changed meta data" />
+    <list default="true" id="31383a99-516d-4c39-af48-b897bcd004d4" name="Changes" comment="Changed meta data">
+      <change beforePath="$PROJECT_DIR$/src/app/components/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Clock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Clock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +33,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Test-branch" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,7 +70,7 @@
     "Node.js.tailwind.config.mjs.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Test-branch",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -108,6 +112,7 @@
       <workItem from="1738857956026" duration="378000" />
       <workItem from="1738858424304" duration="104000" />
       <workItem from="1739037307460" duration="1885000" />
+      <workItem from="1746669889307" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="Changed I'm to &quot;my name is&quot;">
       <option name="closed" value="true" />
