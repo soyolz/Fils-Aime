@@ -14,20 +14,12 @@ const projectData = [
     },
     {
         id: 2,
-        title: "Project Two",
-        description: "A sample project to showcase your skills (update with real project)",
-        link: "#",
-        tags: ["JavaScript", "Node.js", "Express"],
+        title: "Tuner.io",
+        description: "A website designed for gauging performance outcomes.",
+        link: "NOT YET FINISHED",
+        tags: ["Svelte", "Svelte Kit", "Tailwind CSS", "Firebase", "Firebase Auth"],
         featured: false
     },
-    {
-        id: 3,
-        title: "Project Three",
-        description: "Another sample project to fill out your portfolio (update with real project)",
-        link: "#",
-        tags: ["React", "Firebase", "CSS"],
-        featured: false
-    }
 ];
 
 export default function Projects() {

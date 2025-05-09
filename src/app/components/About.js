@@ -96,7 +96,6 @@ export default function About() {
                             <p className="mb-4 text-gray-300">
                                 {universityData[activeTab].description}
                             </p>
-
                             <div>
                                 <h5 className="text-sm uppercase text-gray-500 mb-2">Relevant Coursework</h5>
                                 <ul className="grid grid-cols-2 gap-2">
