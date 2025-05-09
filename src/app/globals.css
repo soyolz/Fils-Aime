@@ -5,34 +5,159 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --muted: #6b7280;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #9ca3af;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.max-w-xl {
-  max-width: 60rem ;
+/* Typography */
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
-.text-sm{
-  font-size: 0.800rem;
-}
-
-.text-vm{
+.text-vm {
   font-size: 1rem;
+  line-height: 1.5rem;
 }
 
+/* Custom spacing */
 .py-x {
-  padding-top: 0.25rem /* 4px */;
-  padding-bottom: 0.25rem /* 4px */;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
+
+/* Component Styles */
+.section-heading {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.nav-item {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  color: var(--accent);
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+  border-left: 2px solid var(--muted);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  left: -6px;
+  top: 6px;
+}
+
+.project-item {
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateX(5px);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: var(--accent);
+  color: white;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+}
+
+.button-outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.button-outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
