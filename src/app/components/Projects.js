@@ -10,15 +10,15 @@ const projectData = [
         description: "Personal portfolio website built with Next.js and Tailwind CSS",
         link: "https://www.fils.lol",
         tags: ["Next.js", "React", "Tailwind CSS"],
-        featured: true
+        featured: false
     },
     {
         id: 2,
-        title: "Tuner.io",
+        title: "Tuner.io (Current)",
         description: "A website designed for gauging performance outcomes.",
         link: "NOT YET FINISHED",
         tags: ["Svelte", "Svelte Kit", "Tailwind CSS", "Firebase", "Firebase Auth"],
-        featured: false
+        featured: true
     },
 ];
 

@@ -171,7 +171,7 @@ export default function Navbar() {
                                         </a>
 
                                         <a
-                                            href="#"  // Replace with actual resume link
+                                            href="/resume.pdf" 
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="btn flex items-center justify-center p-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition-colors"
