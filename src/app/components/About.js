@@ -13,7 +13,7 @@ const universityData = {
         description: "Pursuing advanced software engineering concepts and practical development skills.",
         date: "2025-2026",
         icon: fiu,
-        courses: ["3200 - Programming Languages", "3337 - Advanced Programming", "4421 - Software Engineering", "4933 - Senior Project"]
+        courses: ["4338 - Systems Programming", "3033 - Prob and Stats for CS", "4555 - Principles of Programming Language", "4010 - Software Eng 1"]
     },
     MDC: {
         name: "Miami Dade College",
