@@ -6,6 +6,8 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 
 export default function Navbar() {
+
+    //STATE DECLARTION  
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,6 +24,7 @@ export default function Navbar() {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
+        //[] makes this run only once
     }, []);
 
     function openModal() {

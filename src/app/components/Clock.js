@@ -3,8 +3,8 @@
 
 import { useState, useEffect } from 'react'
 
-function Clock() {
-    // Start with null instead of new Date()
+export default function Clock() {
+    // Start with null instead of new Date() State Declared Variables
     const [time, setTime] = useState(null);
     const [showColon, setShowColon] = useState(true);
 
@@ -41,6 +41,5 @@ function Clock() {
     return (
         <h1>{formatTime()}</h1>
     );
-}
+};
 
-export default Clock;

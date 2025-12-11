@@ -1,14 +1,30 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
+import { Transition, Dialog} from '@headlessui/react';
+import Image from 'next/image'
+import {
+    car,
+    carDesc,
+    carMMY,
+    carName,
+    login,
+    modList,
+    mods,
+    signUp,
+    contact,
+    portfolio
+} from '@/app/components/photos/index.js'
 
-// Sample project data - you can expand this with your actual projects
+// Object 
 const projectData = [
     {
         id: 1,
         title: "Portfolio Website",
         description: "Personal portfolio website built with Next.js and Tailwind CSS",
+        image:[portfolio, contact],
         link: "https://www.fils.lol",
+        alt:"Portfolio project",
         tags: ["Next.js", "React", "Tailwind CSS"],
         featured: false
     },
@@ -16,14 +32,29 @@ const projectData = [
         id: 2,
         title: "Tuner.io (Current)",
         description: "A website designed for gauging performance outcomes.",
+        image:[car, carDesc, carMMY, carName, login, modList, mods, signUp ],
         link: "NOT YET FINISHED",
         tags: ["Svelte", "Svelte Kit", "Tailwind CSS", "Firebase", "Firebase Auth"],
+        alt:"Tuner.io project",
         featured: true
     },
 ];
 
 export default function Projects() {
+
+    // state variable declartions  
+    const [isOpen, setIsOpen] = useState(false)
+    const [selectedProject, setSelectedProject] = useState(null)
     const [filter, setFilter] = useState("all");
+    const [currentImage, setCurrentImage] = useState(0)
+
+    function openModal(){
+        setIsOpen(true);
+    }
+
+    function closeModal(){
+        setIsOpen(false);
+    }
 
     const filteredProjects = filter === "all"
         ? projectData
@@ -31,6 +62,8 @@ export default function Projects() {
 
     return (
         <div className="space-y-8">
+
+            {/* Feature Filter*/}
             <div className="flex justify-between items-center">
                 <h2 className="section-heading">Projects</h2>
 
@@ -57,7 +90,8 @@ export default function Projects() {
                     </button>
                 </div>
             </div>
-
+            
+            {/* Project Boxes */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {filteredProjects.map((project) => (
                     <div
@@ -88,11 +122,13 @@ export default function Projects() {
                             ))}
                         </div>
 
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center text-blue-500 hover:text-blue-400"
+                        <button
+                            onClick={ () => {
+                                openModal()
+                                setSelectedProject(project)
+                                currentImage = 0
+                            }}
+                            className="inline-flex items-center text-blue-500 hover:text-red-500"
                         >
                             View Project
                             <svg
@@ -109,10 +145,77 @@ export default function Projects() {
                                     d="M14 5l7 7m0 0l-7 7m7-7H3"
                                 />
                             </svg>
-                        </a>
+                        </button>
                     </div>
                 ))}
             </div>
+            {/*Modal For Project Images*/}
+            <Transition appear show={isOpen} as={Fragment}>
+                <Dialog as="div" className="realtive z-50" onClose={closeModal}>
+                    <Transition.Child
+                    as={Fragment}
+                    enter="ease-out duration-300"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
+                    leave="ease-in duration-200"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
+                    >
+                        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm"></div>
+                    </Transition.Child>
+
+
+                    {/* Need to fix the image styling and the image limit
+                    */}
+
+                    {selectedProject && (
+                    <div className='fixed inset-0 overflow-auto'>
+                        <div className='flex min-h-full items-center justify-center'>
+                            <Transition.Child
+                            as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                            >
+                            <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-gray-900/20 border border-gray-800 p-6 text-left align-middle shadow-xl transition-all">
+                                <Dialog.Title as="h3" className="text-lg font-medium leading-6 mb-4">
+                                    {selectedProject.title}
+                                    </Dialog.Title>
+                                    <Image 
+                                        src={selectedProject.image[currentImage]}
+                                        alt={selectedProject.alt}
+                                        width={1000}
+                                        height={1000}
+                                        className=""
+                                    />
+                                    <button onClick={() => {
+                                        setCurrentImage(prev =>
+                                        (prev + 1) % selectedProject.image.length
+                                        );
+                                    }}
+                                    className="inline-flex items-center text-blue-500 hover:text-red-500"
+                                    > 
+                                        Next            
+                                    </button>
+                                {/* <button onClick={ () => {
+                                        setCurrentImage(currentImage - 1);
+                                    }}
+                                    className="inline-flex items-center text-blue-500 hover:text-red-500"
+                                    > 
+                                        Back            
+                                    </button>
+                                                    */}
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                    )};
+                </Dialog>
+            </Transition>
         </div>
     );
 }
+

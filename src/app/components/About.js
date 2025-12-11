@@ -1,3 +1,4 @@
+//server side rendering
 'use client'
 
 import { useState } from "react";
@@ -5,13 +6,16 @@ import Image from 'next/image'
 import mdc from './icons/mdcicon.jpg';
 import fiu from './icons/fiuicon.jpg';
 
-// University Data
+// University Data Object 
 const universityData = {
+
+    //key in object 
     FIU: {
+        //nested objects 
         name: "Florida International University",
         major: "Bachelors, Computer Software Design and Development",
         description: "Pursuing advanced software engineering concepts and practical development skills.",
-        date: "2025-2026",
+        date: "2025-2027",
         icon: fiu,
         courses: ["4338 - Systems Programming", "3033 - Prob and Stats for CS", "4555 - Principles of Programming Language", "4010 - Software Eng 1"]
     },
@@ -26,12 +30,15 @@ const universityData = {
 }
 
 export default function About() {
+    //state dec variables 
     const [activeTab, setActiveTab] = useState("FIU");
 
     return (
         <div className="space-y-8">
-            <h2 className="section-heading">About</h2>
+            <h3 className="section-heading">About</h3>
+            
 
+            {/* About Desc*/}
             <div className="space-y-6">
                 <div className="prose">
                     <h1 className="text-2xl font-bold mb-4">Hi, my name is Fritz.</h1>
@@ -47,6 +54,7 @@ export default function About() {
                     </p>
                 </div>
 
+                {/* Education*/}
                 <div className="pt-4">
                     <h3 className="section-heading">Education</h3>
 
@@ -54,11 +62,12 @@ export default function About() {
                         {/* Education Tabs */}
                         <div className="flex space-x-2 border-b border-gray-700/20">
                             {Object.keys(universityData).map((uniKey) => (
+                                //object.keys -> "get list of keys in uniData" -> .map((uniKe)) -> "for each key make a button or run the function"
                                 <button
                                     key={uniKey}
                                     onClick={() => setActiveTab(uniKey)}
                                     className={`px-4 py-2 text-sm font-medium transition-colors 
-                                              ${activeTab === uniKey
+                                        ${activeTab === uniKey
                                         ? "border-b-2 border-blue-500 text-blue-500"
                                         : "text-gray-400 hover:text-gray-300"}`}
                                 >
