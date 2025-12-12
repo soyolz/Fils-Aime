@@ -126,7 +126,6 @@ export default function Projects() {
                             onClick={ () => {
                                 openModal()
                                 setSelectedProject(project)
-                                currentImage = 0
                             }}
                             className="inline-flex items-center text-blue-500 hover:text-red-500"
                         >
